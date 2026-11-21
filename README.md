@@ -18,6 +18,42 @@ It is a small, public-domain stand-in for a recommender I built at work (Conscio
 3. **Guide loop.** Claude (Sonnet) gets the tagged catalog and the conversation so far, and replies with JSON: ask a question, or recommend a story with a pivot type. Replies are validated (real story id, no repeats, at most three questions in a row) and retried if they fail.
 4. **Tests.** 15 scripted reader scenarios. Each starts from a fixed first story, has a simulated reader (a cheap model playing a hidden persona) drop it, lets the guide ask its questions, then checks the next recommendation against what a good guide should do: the right kind of pivot, the right change in genre, length, language, ending or mood, and the right number of questions.
 
+## Example session
+
+A real session, with the file-path lines the tool prints left out. The reader asks for a story and drops it with a vague answer, so the guide asks what went wrong instead of guessing. The answer is about what the genre offers, so the guide switches genre. A later complaint about content makes it adjust within the new path.
+
+```
+You: I would love something where a pair of individuals go on a journey together and
+     discover something about themselves while looking for answers from their past
+
+Guide: Companions setting out together to decode a message from the past is the heart
+       of this tale. It's not deeply introspective, but it's a gripping quest where the
+       trio's trust is tested. If you want more inner discovery, I can steer you elsewhere.
+   >> "The Gold-Bug" by Edgar Allan Poe  (Mystery & Detective, long)
+
+You: meh
+
+Guide: Fair enough, that one was more treasure hunt than self-discovery. What fell flat
+       for you: the puzzle-and-codes plot, the length, or the lack of any emotional
+       journey for the characters?
+
+You: lack of any emotional journey
+
+Guide: Since puzzles left you cold, I've switched to a more emotional path. A statue and
+       a little swallow work together, and the Prince looks back on his sheltered past,
+       so both of them are changed by what they find.
+   >> "The Happy Prince" by Oscar Wilde  (Literary & Reflective, medium)
+
+You: I would prefer no animals at all
+
+Guide: No animals, noted. I've kept the emotional, reflective path and changed only that.
+       A husband and wife face years of hardship together, and Mathilde finally learns the
+       truth about a past mistake and who she really is.
+   >> "The Necklace" by Guy de Maupassant  (Literary & Reflective, short)
+```
+
+What happened: a vague drop got one clarifying question (ask), "no emotional journey" was a complaint about the genre so it switched path (mystery to literary), and "no animals" was a complaint about one dimension so it adjusted within the path.
+
 ## Results
 
 Each prompt version was run 3 times over all 15 scenarios (45 scenario runs), because the guide's answers vary from run to run: the same prompt scored 12/13, 13/15 and 11/15 in single runs.
