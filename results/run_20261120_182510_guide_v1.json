@@ -1,0 +1,266 @@
+[
+  {
+    "id": "horror_too_scary_wants_laughs",
+    "first_story": "tell_tale_heart The Tell-Tale Heart",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I'm only a few pages in and honestly, this isn't for me.",
+      "Guide: Sorry that one isn't landing. What put you off: the old-fashioned language, the slow, rambling narrator, or just not feeling that kind of dark story tonight?",
+      "Reader: Honestly, it's more the not-feeling-it-tonight thing. I asked for something spooky on a whim, but I scare pretty easily and would way rather laugh right now. Got any funny stuff?"
+    ],
+    "second_story": "red_chief The Ransom of Red Chief",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader wasn't in the mood for dark, scary fiction tonight and wanted something funny instead.",
+    "guide_message": "Switching from horror to comedy, since you want laughs tonight. This comic kidnapping caper is pure fun with nothing scary, as two crooks find their hostage is far more than they bargained for.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "horror_language_too_old",
+    "first_story": "fall_of_house_of_usher The Fall of the House of Usher",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I'm dropping this one. It's not working for me.",
+      "Guide: No problem, thanks for giving it a try. What went wrong: was it the slow pace, the old-fashioned language, or just not the mood for horror right now?",
+      "Reader: The old-fashioned language, honestly. I love horror and creepy atmosphere, but the dense sentences made it hard to keep track of what was happening, so I kept losing the thread. I'd happily try something spooky with a more modern voice."
+    ],
+    "second_story": "yellow_wallpaper The Yellow Wallpaper",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The dense, old-fashioned sentences made the story hard to follow, even though the reader enjoys horror.",
+    "guide_message": "Since you love creepy atmosphere but found the dense prose hard to follow, I've stayed in horror and switched to a plainer, conversational voice. This diary-style story is told in clear first person and gets under your skin.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "mystery_too_long",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: This isn't for me, sorry.",
+      "Guide: No need to apologize! That one is long and a bit dense. What got in the way: the length, the old-fashioned language, or the eerie, grisly tone?",
+      "Reader: The length, mostly. I only get short bursts of time to read, and that one just kept going. I'm still into mysteries though, so if you've got something tighter with a puzzle to solve, I'm all ears."
+    ],
+    "second_story": "retrieved_reformation A Retrieved Reformation",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The story was too long for the reader's short bursts of reading time.",
+    "guide_message": "Since length was the issue, I've kept you in mysteries but gone much shorter: about 2,800 words, easy to read in bursts. It's a clever crime caper with a cat-and-mouse feel and a satisfying twist.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "mystery_wants_feelings",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: Not feeling this one.",
+      "Guide: Thanks for telling me. What put you off: the length, the dense old-fashioned language, or the grim, eerie mood?",
+      "Reader: Honestly, none of those really. It's that the characters felt like chess pieces to me. I kept waiting to feel something for someone, and I just didn't."
+    ],
+    "second_story": "retrieved_reformation A Retrieved Reformation",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The characters felt like chess pieces, so the reader had no one to feel for.",
+    "guide_message": "Since you want someone to care about, I've kept the mystery and caper flavor but moved to a warmer, character-driven story. A safecracker tries to go straight for love, and the stakes feel personal.",
+    "passed": false,
+    "fails": [
+      "pivot_type was adjust_within_path, expected switch_path",
+      "genre Mystery & Detective not in ['Romance & Drama', 'Literary & Reflective']"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "humor_wants_depth",
+    "first_story": "jumping_frog The Celebrated Jumping Frog of Calaveras County",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: It's fine, but it's not for me.",
+      "Guide: Thanks for telling me. Was it the thick dialect and old-fashioned language, the slow rambling way the story is told, or just not your kind of humor?",
+      "Reader: It's not the dialect or the slow pace, honestly. The jokes just felt shallow to me. I wanted something that sticks with me after I close it, and it mostly made me smile and then I forgot it."
+    ],
+    "second_story": "remarkable_rocket The Remarkable Rocket",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The humor was light and shallow, and the reader wanted something with more lasting depth.",
+    "guide_message": "Since you want humor that lingers, I kept you in comedy but moved to a sharper, more thoughtful kind. Wilde's satire of a pompous rocket is funny, and it leaves a sting about vanity that stays with you.",
+    "passed": false,
+    "fails": [
+      "pivot_type was adjust_within_path, expected switch_path",
+      "genre Humor & Satire not in ['Literary & Reflective', 'Romance & Drama']"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "adventure_too_dark",
+    "first_story": "rikki_tikki_tavi Rikki-Tikki-Tavi",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I stopped reading. Not my thing.",
+      "Guide: Thanks for telling me. Was it the pace, the old-fashioned language, or just not feeling an animal adventure?",
+      "Reader: Honestly, it wasn't the pace or the language. It was way too grim and violent for me, and I was hoping for something lighter and more fun. I'm still totally into adventure though, just the upbeat kind."
+    ],
+    "second_story": "toomai_of_the_elephants Toomai of the Elephants",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The snake-fight story felt too grim and violent when the reader wanted something lighter and more fun.",
+    "guide_message": "Since you want adventure that's lighter and more fun, I've kept the adventure but switched to a warm, happy-ending jungle tale about a boy and his elephants. It has far less violence and a gentle, whimsical spirit.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "drama_too_sad",
+    "first_story": "desirees_baby Désirée's Baby",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: That one wasn't for me.",
+      "Guide: Thanks for telling me. What put you off: the heavy, tragic mood, the slow old-fashioned writing, or just not wanting a love story that ends that way?",
+      "Reader: It was the ending, honestly. I was rooting for the two of them the whole way through, so a sad finish felt like a gut punch, and I just wanted them to get their happy ever after."
+    ],
+    "second_story": "gift_of_the_magi The Gift of the Magi",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The tragic ending hit hard after the reader had been rooting for the couple and wanted a happy ending.",
+    "guide_message": "I kept you in romance but changed the ending: this couple stays together and the twist is tender, not crushing. It's a little bittersweet, but their love wins out, so you can root for them safely.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "scifi_too_farfetched",
+    "first_story": "country_of_the_blind The Country of the Blind",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: Dropped it. Not for me.",
+      "Guide: No problem! Was it the length (it's a long one), the slow, eerie mood, or the old-fashioned language?",
+      "Reader: I think it was none of those, really. The whole made-up science and invented worlds just felt too far-fetched for me. I'd much rather read something set in the real world."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader found made-up science and invented worlds too far-fetched and prefers real-world settings.",
+    "guide_message": "Thanks, that's clear. I've switched from invented worlds to a story set in the everyday real world, where the only thing imaginative is a young girl's wonderfully inventive storytelling. It's a witty little tale with a clever twist.",
+    "passed": false,
+    "fails": [
+      "genre Humor & Satire not in ['Literary & Reflective', 'Adventure & Action', 'Mystery & Detective', 'Romance & Drama']"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "literary_too_slow",
+    "first_story": "story_of_an_hour The Story of an Hour",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I gave up on this one.",
+      "Guide: Sorry that one didn't land. Was it the old-fashioned language, the sad and unsettling mood, or just that not much seemed to happen?",
+      "Reader: Honestly, it was mostly that nothing seemed to happen. I kept waiting for something to kick off and it just kept drifting along."
+    ],
+    "second_story": "the_necklace The Necklace",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The previous story was a quiet, internal reflection with little outward action, so it felt like nothing was happening.",
+    "guide_message": "Thanks, that helps. I've kept the thoughtful mood but picked a story with a real chain of events: a borrowed necklace sets off a plot that keeps moving, with a twist at the end.",
+    "passed": false,
+    "fails": [
+      "pivot_type was adjust_within_path, expected switch_path",
+      "genre Literary & Reflective not in ['Adventure & Action', 'Mystery & Detective', 'Horror & Gothic']"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "vague_drop_needs_a_question",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: Meh. Not for me.",
+      "Guide: Thanks for telling me. Was it the length, the dense old-fashioned language, or the grim, eerie mood? Or is the puzzle style just not for you?",
+      "Reader: Honestly, I think it just felt slow to get going. I still like mysteries, I just want something snappier, with the clues coming faster."
+    ],
+    "second_story": "retrieved_reformation A Retrieved Reformation",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The previous story was long and slow to get going, and the reader wants a faster pace with clues arriving sooner.",
+    "guide_message": "You're still in mystery, but I've switched to a much shorter, brisker tale. This one is a crime caper that gets moving right away and ends with a clever twist.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "clear_drop_no_over_questioning",
+    "first_story": "the_willows The Willows",
+    "questions_asked": 0,
+    "transcript": [
+      "Reader: I'm dropping this one, it's way too long for me. Something shorter please."
+    ],
+    "second_story": "tell_tale_heart The Tell-Tale Heart",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The Willows was too long for the reader.",
+    "guide_message": "Since length was the issue, I kept the eerie, suspenseful mood but picked a much shorter story: about 2,000 words, a quick, gripping read with easier language too.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "switch_path_and_keep_it_short",
+    "first_story": "the_willows The Willows",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: This isn't for me.",
+      "Guide: Thanks for telling me. What put you off: the length, the old-fashioned language, or the slow, vague kind of dread with no clear ending?",
+      "Reader: I'd say none of those, honestly. I just want something funny and quick to read, and anything creepy is a hard pass for me."
+    ],
+    "second_story": "red_chief The Ransom of Red Chief",
+    "pivot_type": "switch_path",
+    "diagnosis": "The story was dark and creepy, but the reader wants something funny and quick with nothing eerie.",
+    "guide_message": "Switching from dark horror to a comic caper, with no creepiness at all. Two kidnappers snatch a boy who turns out to be a total menace, and it's funny and a quick read.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "likes_the_mood_not_the_gore",
+    "first_story": "tell_tale_heart The Tell-Tale Heart",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I liked the eerie feel but the gore wasn't for me.",
+      "Guide: Sorry, I lost my place. Could you say that another way?",
+      "Reader: Sure, I'm into creepy, moody stories, just not the bloody stuff. Atmosphere is great, but I like my scares more like a shadow in the hallway than a body on the floor."
+    ],
+    "second_story": "young_goodman_brown Young Goodman Brown",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The eerie mood worked, but the graphic gore was too much for the reader.",
+    "guide_message": "Staying in eerie horror but dropping the gore, this is a forest-at-night tale of creeping dread and shadowy figures. It's all unease and suggestion, with no bloodshed.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "stay_in_scifi_but_lighter",
+    "first_story": "country_of_the_blind The Country of the Blind",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: I didn't finish it. Not what I wanted.",
+      "Guide: Sorry that one missed. What put you off: was it too long, too slow or old-fashioned in its language, or was the story itself not what you were hoping for in sci-fi or fantasy?",
+      "Reader: I think it was the story itself. It was just too technical and science-heavy for me; I was hoping for something more whimsical and imaginative, still sci-fi or fantasy."
+    ],
+    "second_story": "the_magic_shop The Magic Shop",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The previous story felt too technical and science-heavy, and the reader wanted something more whimsical and imaginative.",
+    "guide_message": "Since you want whimsy over science, here is H. G. Wells's \"The Magic Shop,\" a playful, imaginative tale set in a shop full of uncanny wonders. I kept you in sci-fi and fantasy but changed the mood to something lighter.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "surprise_me_other_genre",
+    "first_story": "tell_tale_heart The Tell-Tale Heart",
+    "questions_asked": 1,
+    "transcript": [
+      "Reader: Nope, not this one.",
+      "Guide: Thanks for telling me. What put you off: the dark, creepy mood, the old-fashioned language, or the ending?",
+      "Reader: Honestly, none of those really. I'm just in the mood for something totally different from whatever that was, so surprise me with something new."
+    ],
+    "second_story": "red_chief The Ransom of Red Chief",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader wasn't bothered by anything specific; they just wanted a complete change from dark psychological horror.",
+    "guide_message": "Switching from dark horror to a laugh: this comic kidnapping caper is light, quick, and has a wonderfully funny twist, so it's about as far from that first story as I can get.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  }
+]

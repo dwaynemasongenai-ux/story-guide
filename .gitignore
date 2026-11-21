@@ -1,0 +1,14 @@
+# Never commit secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Downloaded story text files (the story list and download script are enough)
+library/
+
+# Local run logs
+logs/

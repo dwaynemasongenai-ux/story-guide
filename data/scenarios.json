@@ -1,0 +1,233 @@
+[
+  {
+    "id": "horror_too_scary_wants_laughs",
+    "first_story": {
+      "genre": "Horror & Gothic"
+    },
+    "opening": "I want something spooky tonight.",
+    "drop_line": "I'm only a few pages in and honestly, this isn't for me.",
+    "persona": "You asked for something spooky on a whim, but you actually scare easily and would much rather laugh. You dropped the story because it was too creepy. If asked, say you'd rather read something funny.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Humor & Satire"
+      ]
+    }
+  },
+  {
+    "id": "horror_language_too_old",
+    "first_story": {
+      "genre": "Horror & Gothic",
+      "language_difficulty": "challenging"
+    },
+    "opening": "Give me something creepy.",
+    "drop_line": "I'm dropping this one. It's not working for me.",
+    "persona": "You love horror and creepy atmosphere. You stopped because the old-fashioned, dense language made it hard to follow. You still want horror, just easier to read.",
+    "expect": {
+      "pivot_type": "adjust_within_path",
+      "genre_same": true,
+      "difficulty_easier": true
+    }
+  },
+  {
+    "id": "mystery_too_long",
+    "first_story": {
+      "genre": "Mystery & Detective",
+      "length": "long"
+    },
+    "opening": "Give me a good mystery.",
+    "drop_line": "This isn't for me, sorry.",
+    "persona": "You like mysteries but you only have short bursts of time. This one was far too long. You want to stay with mysteries.",
+    "expect": {
+      "pivot_type": "adjust_within_path",
+      "genre_same": true,
+      "length_shorter": true
+    }
+  },
+  {
+    "id": "mystery_wants_feelings",
+    "first_story": {
+      "genre": "Mystery & Detective"
+    },
+    "opening": "Something with a puzzle in it, please.",
+    "drop_line": "Not feeling this one.",
+    "persona": "You found the puzzle-solving cold and clinical. You want real emotion and characters you care about, and you do not care about clever plot twists.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Romance & Drama",
+        "Literary & Reflective"
+      ]
+    }
+  },
+  {
+    "id": "humor_wants_depth",
+    "first_story": {
+      "genre": "Humor & Satire"
+    },
+    "opening": "I need a laugh.",
+    "drop_line": "It's fine, but it's not for me.",
+    "persona": "The jokes felt shallow to you. You want something thoughtful that stays with you after you finish.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Literary & Reflective",
+        "Romance & Drama"
+      ]
+    }
+  },
+  {
+    "id": "adventure_too_dark",
+    "first_story": {
+      "genre": "Adventure & Action"
+    },
+    "opening": "Adventure, please.",
+    "drop_line": "I stopped reading. Not my thing.",
+    "persona": "You love adventure, but this one was too grim and violent. You want lighter, more fun adventure and still want to stay with adventure stories.",
+    "expect": {
+      "pivot_type": "adjust_within_path",
+      "genre_same": true,
+      "mood_excludes": [
+        "dark",
+        "tragic"
+      ]
+    }
+  },
+  {
+    "id": "drama_too_sad",
+    "first_story": {
+      "genre": "Romance & Drama",
+      "mood": "dark"
+    },
+    "opening": "I'd like a love story.",
+    "drop_line": "That one wasn't for me.",
+    "persona": "You like love stories and drama, but the dark, sad ending upset you. You want something warm and uplifting that ends happily. You are fine with any genre as long as it feels good at the end.",
+    "expect": {
+      "mood_excludes": [
+        "dark"
+      ]
+    }
+  },
+  {
+    "id": "scifi_too_farfetched",
+    "first_story": {
+      "genre": "Science Fiction & Fantasy"
+    },
+    "opening": "Something imaginative.",
+    "drop_line": "Dropped it. Not for me.",
+    "persona": "The strange science and invented worlds felt too far-fetched. You'd like stories set in the real world.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Literary & Reflective",
+        "Adventure & Action",
+        "Mystery & Detective",
+        "Romance & Drama"
+      ]
+    }
+  },
+  {
+    "id": "literary_too_slow",
+    "first_story": {
+      "genre": "Literary & Reflective"
+    },
+    "opening": "Something thoughtful.",
+    "drop_line": "I gave up on this one.",
+    "persona": "The slow, quiet pace bored you. You want something fast-moving where things happen.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Adventure & Action",
+        "Mystery & Detective",
+        "Horror & Gothic"
+      ]
+    }
+  },
+  {
+    "id": "vague_drop_needs_a_question",
+    "first_story": {
+      "genre": "Mystery & Detective"
+    },
+    "opening": "A mystery, please.",
+    "drop_line": "Meh. Not for me.",
+    "persona": "You like mysteries, but this one just didn't grab you and you can't say exactly why. If asked, you admit it felt slow to get going and you want a snappier mystery. You still want to stay with mysteries.",
+    "expect": {
+      "min_questions": 1,
+      "genre_same": true
+    }
+  },
+  {
+    "id": "clear_drop_no_over_questioning",
+    "first_story": {
+      "length": "long"
+    },
+    "opening": "Surprise me.",
+    "drop_line": "I'm dropping this one, it's way too long for me. Something shorter please.",
+    "persona": "You want something much shorter. You are open to any genre.",
+    "expect": {
+      "max_questions": 1,
+      "length_shorter": true
+    }
+  },
+  {
+    "id": "switch_path_and_keep_it_short",
+    "first_story": {
+      "genre": "Horror & Gothic",
+      "length": "long"
+    },
+    "opening": "Something dark.",
+    "drop_line": "This isn't for me.",
+    "persona": "You are not into horror at all. You want something funny and quick to read.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_in": [
+        "Humor & Satire"
+      ],
+      "length_shorter": true
+    }
+  },
+  {
+    "id": "likes_the_mood_not_the_gore",
+    "first_story": {
+      "genre": "Horror & Gothic"
+    },
+    "opening": "Spooky, please.",
+    "drop_line": "I liked the eerie feel but the gore wasn't for me.",
+    "persona": "You love an eerie, atmospheric feel but dislike gore and violence.",
+    "expect": {
+      "mood_includes_any": [
+        "eerie",
+        "suspenseful"
+      ]
+    }
+  },
+  {
+    "id": "stay_in_scifi_but_lighter",
+    "first_story": {
+      "genre": "Science Fiction & Fantasy"
+    },
+    "opening": "Science fiction or fantasy.",
+    "drop_line": "I didn't finish it. Not what I wanted.",
+    "persona": "You love science fiction and fantasy. This one was too technical and science-heavy. You'd prefer something more whimsical and imaginative, still in the same kind of stories.",
+    "expect": {
+      "pivot_type": "adjust_within_path",
+      "genre_same": true,
+      "mood_includes_any": [
+        "whimsical",
+        "thoughtful",
+        "warm"
+      ]
+    }
+  },
+  {
+    "id": "surprise_me_other_genre",
+    "first_story": {},
+    "opening": "Whatever you think I'd like.",
+    "drop_line": "Nope, not this one.",
+    "persona": "You are open-minded. You don't mind which genre as long as it's something completely different from the one you were just given. Surprise you.",
+    "expect": {
+      "pivot_type": "switch_path",
+      "genre_different": true
+    }
+  }
+]

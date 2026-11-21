@@ -1,0 +1,2 @@
+# No third-party packages are needed. Everything uses Python's standard library,
+# so the project also runs on locked-down Windows PCs that block compiled add-ons.

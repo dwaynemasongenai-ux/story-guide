@@ -1,0 +1,479 @@
+{
+  "tell_tale_heart": {
+    "title": "The Tell-Tale Heart",
+    "author": "Edgar Allan Poe",
+    "genre": "Horror & Gothic",
+    "subgenre": "psychological horror confession",
+    "mood": [
+      "eerie",
+      "dark",
+      "suspenseful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "tragic",
+    "blurb": "A narrator insists on his sanity while recounting, in unsettling detail, his obsessive plan against an elderly man whose pale eye disturbs him. As he works to conceal his crime, his mounting nervousness begins to take on a life of its own.",
+    "word_count": 2083,
+    "length": "short"
+  },
+  "fall_of_house_of_usher": {
+    "title": "The Fall of the House of Usher",
+    "author": "Edgar Allan Poe",
+    "genre": "Horror & Gothic",
+    "subgenre": "gothic decay and madness",
+    "mood": [
+      "eerie",
+      "dark",
+      "tragic"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "tragic",
+    "blurb": "A narrator rides to the decaying mansion of his childhood friend Roderick Usher, who has summoned him in a state of mounting nervous dread. What he finds inside the gloomy house, and the terrible events that unfold there, lead to a catastrophic collapse of both family and home.",
+    "word_count": 7083,
+    "length": "medium"
+  },
+  "monkeys_paw": {
+    "title": "The Monkey's Paw",
+    "author": "W. W. Jacobs",
+    "genre": "Horror & Gothic",
+    "subgenre": "cursed-object supernatural tale",
+    "mood": [
+      "eerie",
+      "dark",
+      "tragic"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "tragic",
+    "blurb": "An old soldier shares a dried monkey's paw that grants three wishes, and an ordinary English family soon learns that fate exacts a price for each one. The story builds from a cozy domestic evening into an escalating sense of dread around the talisman and the wishes made with it.",
+    "word_count": 3948,
+    "length": "medium"
+  },
+  "the_willows": {
+    "title": "The Willows",
+    "author": "Algernon Blackwood",
+    "genre": "Horror & Gothic",
+    "subgenre": "cosmic weird fiction",
+    "mood": [
+      "eerie",
+      "dark",
+      "suspenseful"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "ambiguous",
+    "blurb": "Two travelers paddling a Canadian canoe down the Danube are drawn into a remote, shifting wilderness of willow-choked islands where the river seems to have a will of its own. Their journey takes a disturbing turn when they encounter a drowned body and the strange, unsettling marks upon it.",
+    "word_count": 19554,
+    "length": "long"
+  },
+  "rue_morgue": {
+    "title": "The Murders in the Rue Morgue",
+    "author": "Edgar Allan Poe",
+    "genre": "Mystery & Detective",
+    "subgenre": "locked-room detective puzzle",
+    "mood": [
+      "eerie",
+      "suspenseful",
+      "thoughtful"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "resolved",
+    "blurb": "In Paris, a reclusive and brilliant amateur analyst named Dupin and his unnamed companion take up two gruesome murders in a shuttered apartment, where the victims were found in impossible circumstances and witnesses heard voices no one could fully explain. Dupin reasons from small, overlooked details to a solution that the official police investigation has missed entirely.",
+    "word_count": 13661,
+    "length": "long"
+  },
+  "purloined_letter": {
+    "title": "The Purloined Letter",
+    "author": "Edgar Allan Poe",
+    "genre": "Mystery & Detective",
+    "subgenre": "analytical detective puzzle",
+    "mood": [
+      "thoughtful",
+      "suspenseful",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "resolved",
+    "blurb": "Paris Prefect G—— calls on the amateur reasoner C. Auguste Dupin for help recovering a compromising letter stolen by the unscrupulous Minister D——— from a royal lady. Dupin's clever method of retrieving the letter, and the wit with which he outmaneuvers the minister, unfold through the men's conversation.",
+    "word_count": 6977,
+    "length": "medium"
+  },
+  "speckled_band": {
+    "title": "The Adventure of the Speckled Band",
+    "author": "Arthur Conan Doyle",
+    "genre": "Mystery & Detective",
+    "subgenre": "country-house locked-room mystery",
+    "mood": [
+      "suspenseful",
+      "eerie",
+      "thrilling"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "resolved",
+    "blurb": "Sherlock Holmes and Dr. Watson are visited by a frightened young woman, Helen Stoner, who fears for her life in the ancient Roylott family house on the Surrey moors. As Holmes examines her troubling circumstances and the strange features of the household, the sinister history of the Roylott family and its violent master begin to emerge.",
+    "word_count": 9826,
+    "length": "long"
+  },
+  "jumping_frog": {
+    "title": "The Celebrated Jumping Frog of Calaveras County",
+    "author": "Mark Twain",
+    "genre": "Humor & Satire",
+    "subgenre": "tall-tale frame comedy",
+    "mood": [
+      "funny",
+      "whimsical"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "twist",
+    "blurb": "A narrator visits a garrulous old storyteller, Simon Wheeler, hoping to learn about a minister's whereabouts, but is instead drawn into a rambling account of a compulsive gambler named Jim Smiley. The stories of Smiley's bets, his jumping frog, and his absurd wagers unfold in a deadpan dialect that the narrator finds increasingly hard to escape.",
+    "word_count": 2635,
+    "length": "short"
+  },
+  "red_chief": {
+    "title": "The Ransom of Red Chief",
+    "author": "O. Henry",
+    "genre": "Humor & Satire",
+    "subgenre": "comic kidnapping caper",
+    "mood": [
+      "funny",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "Two small-time swindlers in Alabama plan to kidnap the spoiled ten-year-old son of a stingy local banker, expecting a fat ransom and an easy job. The boy's relentless energy and mischief quickly turn the scheme into a battle of wits and nerves, with the captors soon eager to be rid of him.",
+    "word_count": 4167,
+    "length": "medium"
+  },
+  "open_window": {
+    "title": "The Open Window",
+    "author": "Saki",
+    "genre": "Humor & Satire",
+    "subgenre": "ironic ghost twist",
+    "mood": [
+      "eerie",
+      "funny",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "A nervous visitor calls on a household still grieving three men who vanished years earlier, and the niece's unsettling stories build a creeping sense of the uncanny. The final scene reveals a surprising explanation for the visitor's sudden flight, and the story closes with a sly, teasing remark from the niece.",
+    "word_count": 1212,
+    "length": "short"
+  },
+  "gold_bug": {
+    "title": "The Gold-Bug",
+    "author": "Edgar Allan Poe",
+    "genre": "Mystery & Detective",
+    "subgenre": "cryptographic treasure hunt",
+    "mood": [
+      "suspenseful",
+      "eerie",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "resolved",
+    "blurb": "Narrated by a Charleston friend, the story follows the reclusive Legrand, whose strange gold-colored beetle and a drawing that resembles a skull draw the narrator into his obsessions. The excerpt shows Legrand's odd behavior and the narrator's growing puzzlement, leading toward a hunt for buried treasure.",
+    "word_count": 13492,
+    "length": "long"
+  },
+  "rikki_tikki_tavi": {
+    "title": "Rikki-Tikki-Tavi",
+    "author": "Rudyard Kipling",
+    "genre": "Adventure & Action",
+    "subgenre": "animal hero snake fight",
+    "mood": [
+      "thrilling",
+      "warm",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "happy",
+    "blurb": "A curious young mongoose, swept into an English bungalow garden in India, becomes a self-appointed guardian of the household. He must face a pair of deadly cobras who threaten the local birds and the family he has come to love.",
+    "word_count": 5859,
+    "length": "medium"
+  },
+  "to_build_a_fire": {
+    "title": "To Build a Fire",
+    "author": "Jack London",
+    "genre": "Adventure & Action",
+    "subgenre": "survival in the wilderness",
+    "mood": [
+      "suspenseful",
+      "tragic",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "tragic",
+    "blurb": "A newcomer to the Yukon sets out alone across the frozen wilderness in brutal extreme cold, confident he can reach his companions by evening. As the temperature plunges and small mistakes accumulate, his struggle against the frost becomes a test of judgment and endurance.",
+    "word_count": 7102,
+    "length": "medium"
+  },
+  "gift_of_the_magi": {
+    "title": "The Gift of the Magi",
+    "author": "O. Henry",
+    "genre": "Romance & Drama",
+    "subgenre": "sentimental Christmas tale",
+    "mood": [
+      "warm",
+      "tragic",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "On the eve of Christmas, a young wife in a modest flat with only a little money sets out to find a gift worthy of her husband. The sacrifices each makes for the other lead to a surprising reversal, and the narrator closes by reflecting on what true giving means.",
+    "word_count": 2069,
+    "length": "short"
+  },
+  "story_of_an_hour": {
+    "title": "The Story of an Hour",
+    "author": "Kate Chopin",
+    "genre": "Literary & Reflective",
+    "subgenre": "psychological short fiction",
+    "mood": [
+      "thoughtful",
+      "tragic",
+      "eerie"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "Told the news of her husband's reported death in a railroad disaster, a young wife retreats alone to her room and begins to feel an unexpected surge of liberation as she imagines the years ahead. The story explores the tension between grief, freedom, and the constraints of marriage in late nineteenth-century society.",
+    "word_count": 1017,
+    "length": "short"
+  },
+  "the_necklace": {
+    "title": "The Necklace",
+    "author": "Guy de Maupassant",
+    "genre": "Literary & Reflective",
+    "subgenre": "ironic social realism",
+    "mood": [
+      "thoughtful",
+      "tragic",
+      "warm"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "A clerk's discontented wife, longing for the luxury she believes she was born to, borrows a glittering necklace to shine at a ministry ball. A misfortune that follows the evening shapes the rest of her life in ways she could never have anticipated.",
+    "word_count": 2907,
+    "length": "short"
+  },
+  "happy_prince": {
+    "title": "The Happy Prince",
+    "author": "Oscar Wilde",
+    "genre": "Literary & Reflective",
+    "subgenre": "allegorical fable with pathos",
+    "mood": [
+      "tragic",
+      "warm",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "tragic",
+    "blurb": "A gilded statue of a prince, now high above a city and able to see its suffering, persuades a swallow to delay his flight south and carry his jewels to the poor. The story follows their friendship and its costly generosity, leading to a bittersweet conclusion about sacrifice and reward.",
+    "word_count": 3479,
+    "length": "medium"
+  },
+  "nightingale_and_rose": {
+    "title": "The Nightingale and the Rose",
+    "author": "Oscar Wilde",
+    "genre": "Literary & Reflective",
+    "subgenre": "fable of sacrificial love",
+    "mood": [
+      "tragic",
+      "thoughtful",
+      "whimsical"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "tragic",
+    "blurb": "A nightingale overhears a young Student lamenting that he cannot find a red rose to win the love of a professor's daughter, and she resolves to help him. Her sacrifice, made in song against a thorn, brings a strange and costly result that the Student meets with indifference.",
+    "word_count": 2334,
+    "length": "short"
+  },
+  "country_of_the_blind": {
+    "title": "The Country of the Blind",
+    "author": "H. G. Wells",
+    "genre": "Science Fiction & Fantasy",
+    "subgenre": "lost-valley utopian fantasy",
+    "mood": [
+      "eerie",
+      "thoughtful",
+      "suspenseful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "A mountaineer falls from an Andean peak and tumbles down into a hidden valley cut off from the outside world for generations, where a community of people has lived without sight. The story follows the climber's strange encounter with a society that has adapted entirely to blindness, and his growing ambitions within it.",
+    "word_count": 9528,
+    "length": "long"
+  },
+  "yellow_wallpaper": {
+    "title": "The Yellow Wallpaper",
+    "author": "Charlotte Perkins Gilman",
+    "genre": "Horror & Gothic",
+    "subgenre": "psychological gothic horror",
+    "mood": [
+      "eerie",
+      "dark",
+      "tragic"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "A woman confined to a rented nursery for her supposed nervous illness becomes increasingly obsessed with the sprawling yellow wallpaper in the room, which seems to hold shapes and watching eyes. Her husband, a physician, dismisses her fears, and her narrative grows more fragmented as her isolation deepens.",
+    "word_count": 6170,
+    "length": "medium"
+  },
+  "young_goodman_brown": {
+    "title": "Young Goodman Brown",
+    "author": "Nathaniel Hawthorne",
+    "genre": "Horror & Gothic",
+    "subgenre": "allegorical witch-meeting tale",
+    "mood": [
+      "eerie",
+      "dark",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "On a dark errand into the forest at sunset, a young Puritan husband leaves his devoted wife Faith and meets a mysterious traveler who seems to know his family and their secrets. What he witnesses on the road leaves him unsettled, and the story asks whether his night was real or only a dream.",
+    "word_count": 5247,
+    "length": "medium"
+  },
+  "owl_creek_bridge": {
+    "title": "An Occurrence at Owl Creek Bridge",
+    "author": "Ambrose Bierce",
+    "genre": "Horror & Gothic",
+    "subgenre": "psychological war ghost story",
+    "mood": [
+      "eerie",
+      "tragic",
+      "suspenseful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "A Confederate planter faces hanging from a Civil War railroad bridge, and his final moments unfold in a vivid, drawn-out sequence of sensation and memory. The story keeps the reader inside his perceptions, where what seems real may not be.",
+    "word_count": 3737,
+    "length": "medium"
+  },
+  "the_magic_shop": {
+    "title": "The Magic Shop",
+    "author": "H. G. Wells",
+    "genre": "Science Fiction & Fantasy",
+    "subgenre": "uncanny magic shop",
+    "mood": [
+      "eerie",
+      "whimsical",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "A father takes his young son into a strange London magic shop whose proprietor produces objects from his own body and seems to know uncanny things about the visitors. The narrator is left unsettled by what happened there, and the aftermath raises questions he cannot resolve.",
+    "word_count": 3958,
+    "length": "medium"
+  },
+  "the_crystal_egg": {
+    "title": "The Crystal Egg",
+    "author": "H. G. Wells",
+    "genre": "Science Fiction & Fantasy",
+    "subgenre": "alien artifact mystery",
+    "mood": [
+      "eerie",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "A grimy Seven Dials curiosity shop offers a polished crystal egg, and a quarrel over its price between the shopkeeper, his wife, and two eager customers soon turns strange. The narrator, a investigator of the affair, pieces together the trail of the object and the odd people who sought it.",
+    "word_count": 6838,
+    "length": "medium"
+  },
+  "remarkable_rocket": {
+    "title": "The Remarkable Rocket",
+    "author": "Oscar Wilde",
+    "genre": "Humor & Satire",
+    "subgenre": "satirical fairy tale",
+    "mood": [
+      "funny",
+      "whimsical",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "At a royal wedding, a vain and self-important firework rocket boasts endlessly about his own remarkable nature while the other fireworks and the Court around him go about their business. The excerpt satirizes vanity, pretension, and the gap between a character's self-image and reality.",
+    "word_count": 4391,
+    "length": "medium"
+  },
+  "toomai_of_the_elephants": {
+    "title": "Toomai of the Elephants",
+    "author": "Rudyard Kipling",
+    "genre": "Adventure & Action",
+    "subgenre": "jungle elephant coming-of-age",
+    "mood": [
+      "thrilling",
+      "warm",
+      "whimsical"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "happy",
+    "blurb": "A ten-year-old mahout's son, Little Toomai, works alongside his old elephant Kala Nag catching wild elephants in the Garo hills of India. Through the bustle of the Keddah stockade drives and the camp life of the elephant-catchers, the boy's bold, wandering spirit sets him apart from the others.",
+    "word_count": 7290,
+    "length": "medium"
+  },
+  "mowglis_brothers": {
+    "title": "Mowgli's Brothers",
+    "author": "Rudyard Kipling",
+    "genre": "Adventure & Action",
+    "subgenre": "jungle coming-of-age tale",
+    "mood": [
+      "suspenseful",
+      "thoughtful",
+      "warm"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "ambiguous",
+    "blurb": "A wolf pack in the Indian hills must decide the fate of a naked human baby who wandered into their cave, as the vengeful tiger Shere Khan demands the child be handed over. The story follows the tense standoff between the wolves and the tiger, and the bond that forms between the boy and the animals who raised him.",
+    "word_count": 7452,
+    "length": "medium"
+  },
+  "desirees_baby": {
+    "title": "Désirée's Baby",
+    "author": "Kate Chopin",
+    "genre": "Romance & Drama",
+    "subgenre": "tragic Southern racial drama",
+    "mood": [
+      "tragic",
+      "dark",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "A beautiful young woman, adopted into a Louisiana plantation family and happily married to a proud planter, begins to sense that something has shifted in her husband's manner after the birth of their son. What she discovers about her own origins and the baby's appearance sends her world into crisis, and the story closes on a stark revelation about her husband's family.",
+    "word_count": 2143,
+    "length": "short"
+  },
+  "furnished_room": {
+    "title": "The Furnished Room",
+    "author": "O. Henry",
+    "genre": "Horror & Gothic",
+    "subgenre": "haunted lodging ghost story",
+    "mood": [
+      "eerie",
+      "tragic",
+      "thoughtful"
+    ],
+    "language_difficulty": "challenging",
+    "ending": "twist",
+    "blurb": "A young man searching for a missing sweetheart rents a shabby furnished room in a decaying boarding house, where he senses her presence through a lingering scent of mignonette. Its grim, ironic conclusion is revealed through the landladies' gossip, reframing his hopes in a chilling way.",
+    "word_count": 2455,
+    "length": "short"
+  },
+  "retrieved_reformation": {
+    "title": "A Retrieved Reformation",
+    "author": "O. Henry",
+    "genre": "Mystery & Detective",
+    "subgenre": "reformed criminal crime caper",
+    "mood": [
+      "suspenseful",
+      "warm",
+      "thoughtful"
+    ],
+    "language_difficulty": "moderate",
+    "ending": "twist",
+    "blurb": "Jimmy Valentine, a released safecracker, goes straight under a new name and wins the love of a small-town banker's daughter. When his old skills are needed to save a trapped child, his past threatens to catch up with him.",
+    "word_count": 2818,
+    "length": "short"
+  }
+}
