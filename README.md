@@ -4,6 +4,8 @@ An adaptive reading-path recommender built on the Claude API. It recommends a cl
 
 It is a small, public-domain stand-in for a recommender I built at work (Conscious Guide), rebuilt from scratch so the design, the tests and the numbers can be shown openly.
 
+For my production chatbot work, see the written [Riley case study](riley-case-study.md).
+
 ## What it does
 
 - Recommends one public-domain short story at a time from a curated library of 30 stories.
