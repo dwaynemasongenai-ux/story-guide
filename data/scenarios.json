@@ -229,5 +229,17 @@
       "pivot_type": "switch_path",
       "genre_different": true
     }
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": {
+      "genre": "Mystery & Detective"
+    },
+    "opening": "Something to take my mind off things.",
+    "drop_line": "Meh.",
+    "persona": "You did not enjoy the story but cannot say what was wrong with it. When asked, you give abstract answers that do not point to any specific fix, for example 'it was forgettable' or 'nothing really happened, I wouldn't recommend it to anyone'. You never say that the pace, length, language, mood, ending or genre was the problem, and you never pick any of the options the guide offers.",
+    "expect": {
+      "max_questions": 2
+    }
   }
 ]
