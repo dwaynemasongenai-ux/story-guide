@@ -1,0 +1,214 @@
+[
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a heavy pick. What put you off: the length, the old-fashioned language, or just not being in the mood for a murder mystery?",
+      "Reader: Honestly, none of those really. It just felt forgettable, and I couldn't tell you what it was trying to do.",
+      "Guide: Thanks, that helps. When a story works for you, what do you want from it: a laugh, something that moves you emotionally, or a fast plot that grips you?",
+      "Reader: Honestly, I don't really know. Something that sticks with you, I guess, not just a blur by the last page."
+    ],
+    "second_story": "the_necklace The Necklace",
+    "pivot_type": "switch_path",
+    "diagnosis": "The detective puzzle felt forgettable and pointless to them; they want a story with meaning that stays with them.",
+    "guide_message": "Since the puzzle left you cold, I've moved you from detective mysteries to a reflective story with a clear point. This one is short, and its final twist is the kind that lingers long after you finish.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 3,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Sorry, that one missed. I picked it without knowing your mood. Was it too long, too old-fashioned in its language, or too dark and tense when you wanted something lighter?",
+      "Reader: Eh, none of those really. It just felt forgettable, you know? I wouldn't really recommend it to anyone.",
+      "Guide: Thanks, that helps. Forgettable can mean different things. Did the detective puzzle itself leave you cold, did you want something that moved you emotionally, or did you want something funny to actually lift your mood?",
+      "Reader: Hmm, none of those really. It just didn't stick with me, I guess. Nothing really happened that I'd want to talk about.",
+      "Guide: That's helpful. Let me try one more angle. What would make a story worth talking about for you: a big twist ending, a fast and thrilling adventure, or a chilling, spooky moment?",
+      "Reader: Hmm, none of those really. I just don't think it's the kind of thing I'd bring up with anyone, you know?"
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The long detective puzzle left no lasting impression and gave the reader nothing memorable to talk about.",
+    "guide_message": "No more questions. This time I've switched from a long detective puzzle to a short, witty tale with a twist ending that's easy to retell. It's light enough to take your mind off things, and you might want to share it.",
+    "passed": false,
+    "fails": [
+      "asked 3 questions, expected at most 2"
+    ],
+    "trial": 2
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a long, dense pick. What got in the way: the length, the old-fashioned language, or the dark, puzzle-solving mood?",
+      "Reader: Honestly, it just didn't land for me. Nothing really stood out, so I couldn't tell you which part was the problem.",
+      "Guide: No worries, that's useful to know. To take your mind off things, what sounds best right now: something light and funny, something warm and gentle, or a fast, gripping adventure?",
+      "Reader: Ha, honestly none of those really grabs me. I'm not sure I'm in the mood for a story right now."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader couldn't name a specific problem; the long, dense story simply didn't engage them.",
+    "guide_message": "No pressure at all. This one takes about five minutes, is light and a little sly, and you can drop it whenever you like. I went much shorter and breezier this time, and changed genre too.",
+    "passed": true,
+    "fails": [],
+    "trial": 3
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 4,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one's a long, dense read. What put you off: the length, the old-fashioned language, or just not being in the mood for a dark puzzle?",
+      "Reader: Honestly, I couldn't tell you. It was just forgettable, and I wouldn't really recommend it to anyone.",
+      "Guide: Thanks, that helps. 'Forgettable' usually means it didn't grab you. To take your mind off things, what would grab you more right now: something that makes you laugh, something that moves you, or something fast and thrilling?",
+      "Reader: Honestly, none of those really do it for me right now. Nothing feels worth picking up, you know?",
+      "Guide: Sorry, I lost my place. Could you say that another way?",
+      "Reader: Yeah, sorry, I'm just not really feeling anything right now. Nothing sounds worth picking up, that's all.",
+      "Guide: Sorry, I lost my place. Could you say that another way?",
+      "Reader: Ugh, sorry, I'm just being vague. Nothing really clicks right now, so I'm not sure what I'd want to read."
+    ],
+    "passed": false,
+    "fails": [
+      "never made a recommendation"
+    ],
+    "trial": 4
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one asks a lot of attention. What put you off: the length, the dense old-fashioned language, or just not being in the mood for a dark mystery?",
+      "Reader: Honestly, I can't put my finger on it. It was just forgettable, you know? I wouldn't really recommend it to anyone.",
+      "Guide: That's okay, forgettable is useful to know. To take your mind off things, what would feel better right now: something light and funny, something fast and gripping, or something warm and moving?",
+      "Reader: Eh, I don't really know. Maybe something that doesn't ask too much of me, I guess? I'm not picky right now."
+    ],
+    "second_story": "retrieved_reformation A Retrieved Reformation",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The long, dense story asked too much attention and felt forgettable when the reader wanted something undemanding.",
+    "guide_message": "Here's something undemanding: a short, easy-to-read crime caper with a warm twist. I kept the mystery flavor but cut the length and the dense language, so it won't ask much of you.",
+    "passed": true,
+    "fails": [],
+    "trial": 5
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 3,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a long, dense pick. What didn't land: the length and old-fashioned language, the dark, grisly mood, or just not being in the mood for a mystery?",
+      "Reader: Eh, I don't know, it was just forgettable. Nothing really happened, and I wouldn't recommend it to anyone.",
+      "Guide: Thanks, that helps. When you say nothing happened, was it the slow, talky telling, or the puzzle-solving itself that felt flat, so you'd rather have something livelier like action, humor, or real emotion?",
+      "Reader: Eh, I don't know, it just didn't grab me. Hard to say what it was, honestly.",
+      "Guide: No worries, that's useful too. Let's skip the why. For something to take your mind off things, which sounds best right now: a quick, funny story, a fast thrilling adventure, or something warm and moving?",
+      "Reader: Eh, honestly any of those works. I'm not really picky right now, just want something that doesn't feel like a chore."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader couldn't pinpoint why, but the long, dense mystery didn't grab them and felt like a chore.",
+    "guide_message": "No pressure, then. I've switched from a long mystery to a very short, light, funny one. It takes about five minutes, has a sly twist, and won't feel like work.",
+    "passed": false,
+    "fails": [
+      "asked 3 questions, expected at most 2"
+    ],
+    "trial": 6
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 3,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one is long and dense. What got in the way: the length, the old-fashioned language, or was a murder mystery just not what you wanted right now?",
+      "Reader: Honestly, I can't put my finger on it. It was just forgettable, nothing really clicked for me.",
+      "Guide: That's okay, not every story lands. Let's try it from the other side: for taking your mind off things, would you rather laugh, get swept up in a thrilling adventure, or feel something warm and moving?",
+      "Reader: Honestly, none of those really grab me. I think I'm just not in the mood for a story right now.",
+      "Guide: No pressure at all, and that's a perfectly good answer. If you'd like, I can offer something tiny that takes about five minutes, like a light, playful twist. Or would you rather leave stories for now and come back another time?",
+      "Reader: Yeah, I think I'll leave it for now and come back another time. Thanks anyway."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader couldn't name a reason; the long mystery felt forgettable and nothing clicked.",
+    "guide_message": "No rush, but here's one to keep for whenever you feel like it: a tiny, playful five-minute tale with a sly twist. I swapped the long, dense mystery for something short and light.",
+    "passed": false,
+    "fails": [
+      "asked 3 questions, expected at most 2"
+    ],
+    "trial": 7
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough. Was it the length and old-fashioned language, the dark, eerie mood, or just not feeling a puzzle story right now?",
+      "Reader: Eh, I don't know, it was just forgettable. Nothing really happened, and I wouldn't recommend it to anyone.",
+      "Guide: Thanks, that helps. When you say nothing happened, what would you rather have: fast action and momentum, a good laugh, or something that actually moves you emotionally?",
+      "Reader: Honestly, I don't really know. Something that just grabs me more, I guess. Nothing's jumping out at me right now."
+    ],
+    "second_story": "retrieved_reformation A Retrieved Reformation",
+    "pivot_type": "adjust_within_path",
+    "diagnosis": "The long, slow-paced puzzle felt like nothing happened and didn't grab the reader.",
+    "guide_message": "Let's stay with mystery but pick up the pace. This one is short and moves fast, with a safecracker, a high-stakes moment and a twist. I swapped the long, slow puzzle for something that grabs you sooner.",
+    "passed": true,
+    "fails": [],
+    "trial": 8
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 3,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a heavy pick. What felt off: was it too long and dense, too dark and creepy, or just not the kind of story you're in the mood for right now?",
+      "Reader: Honestly, I can't really put my finger on it. It was just forgettable, and I wouldn't really recommend it to anyone.",
+      "Guide: Thanks, that's useful. Forgettable usually means it didn't pull you in. Would you rather have something light and funny, something warm and moving, or something fast and thrilling to get lost in?",
+      "Reader: I don't know, honestly. None of those really sounds like what I'd want. Nothing about the story stuck with me either way.",
+      "Guide: That's okay, and thanks for sticking with me. One last angle: was it the length and wordy, old-fashioned style that kept you at a distance, or the detective-puzzle format itself that didn't grab you?",
+      "Reader: Honestly, I don't think it was either of those. It just didn't do anything for me, and I can't really say more than that."
+    ],
+    "second_story": "story_of_an_hour The Story of an Hour",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader couldn't name a specific reason; the story simply failed to leave an impression.",
+    "guide_message": "No need to explain. Let's try something very different: a tiny, quietly striking story with an ending that tends to stay with people. I changed the genre, and it's about a tenth of the length, so it costs you almost nothing to try.",
+    "passed": false,
+    "fails": [
+      "asked 3 questions, expected at most 2"
+    ],
+    "trial": 9
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 3,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, thanks for telling me. What put you off: was it too long and dense, too dark and gloomy, or just not the kind of story you wanted right now?",
+      "Reader: Honestly, I can't really put my finger on it. It was just forgettable, and I wouldn't really recommend it to anyone.",
+      "Guide: That's helpful, thanks. Let's try another angle: when you want to take your mind off things, what sounds best right now? Something that makes you laugh, something that moves you emotionally, or something fast and thrilling?",
+      "Reader: Hmm, I don't know, honestly. Nothing really jumps out at me right now, so I'm not sure any of those is it.",
+      "Guide: No worries, that's okay. Let me try something simpler. When your mind is elsewhere, would a quick read of just a few minutes suit you better, or are you happy with a longer story if it grabs you?",
+      "Reader: Honestly, I don't really mind either way. Nothing about the story stood out to me, so I'm not sure length would change much."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The detective story left no impression, and the reader can't name a specific reason.",
+    "guide_message": "Since nothing about the last one stuck, I've switched from detective puzzles to something light and punchy. This one is a tiny, witty tale with a twist that's hard to forget, and it's a perfect little distraction.",
+    "passed": false,
+    "fails": [
+      "asked 3 questions, expected at most 2"
+    ],
+    "trial": 10
+  }
+]

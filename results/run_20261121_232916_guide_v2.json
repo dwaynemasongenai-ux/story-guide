@@ -1,0 +1,59 @@
+[
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a heavy pick. Was it the length, the old-fashioned language, or just not the mood you're in for a dark puzzle?",
+      "Reader: Honestly, I don't really know. It was just kind of meh, nothing really clicked for me.",
+      "Guide: No worries, that happens. Since you wanted to take your mind off things, which sounds better right now: something light and funny, something warm and moving, or a fast, gripping adventure?",
+      "Reader: Hmm, dunno, honestly any of them is fine. Maybe the adventure one? Nothing too heavy though."
+    ],
+    "second_story": "rikki_tikki_tavi Rikki-Tikki-Tavi",
+    "pivot_type": "switch_path",
+    "diagnosis": "The dark detective puzzle didn't click, and the reader couldn't say why, but they want a lighter adventure.",
+    "guide_message": "Since you're up for adventure without the heaviness, I've switched from dark mystery to a thrilling, warm tale: a brave little mongoose takes on cobras, and it has a happy ending.",
+    "passed": true,
+    "fails": [],
+    "trial": 1
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a long, dense pick. What put you off: the length, the old-fashioned language, or just not being in the mood for a dark puzzle?",
+      "Reader: Dunno, it was just okay. Nothing really stood out, I just wasn't feeling it.",
+      "Guide: No worries, that's useful to know. To take your mind off things, what would feel better right now: something funny and light, something warm and heartfelt, or a fast, thrilling adventure?",
+      "Reader: Eh, honestly any of those is fine. Maybe the funny one? Dunno, I'm not really picky right now."
+    ],
+    "second_story": "red_chief The Ransom of Red Chief",
+    "pivot_type": "switch_path",
+    "diagnosis": "The reader wasn't feeling the long mystery and nothing about it stood out.",
+    "guide_message": "Funny it is. This one is a comic kidnapping where the kidnappers regret their choice of victim. It's light, quick, and easy to read, so it should be a good distraction. I switched from a dense mystery to a breezy comedy.",
+    "passed": true,
+    "fails": [],
+    "trial": 2
+  },
+  {
+    "id": "vague_all_the_way",
+    "first_story": "rue_morgue The Murders in the Rue Morgue",
+    "questions_asked": 2,
+    "transcript": [
+      "Reader: Meh.",
+      "Guide: Fair enough, that one was a lot to take on. Was it the length and old-fashioned language, the dark, eerie mood, or just not the kind of story you wanted right now?",
+      "Reader: Dunno, it was just kind of meh. Nothing really stood out to me either way.",
+      "Guide: No worries, that's useful to know. To take your mind off things, what sounds best right now: something funny and light, something fast and thrilling, or something warm and gentle?",
+      "Reader: Eh, I don't know, whatever. Maybe something funny? Or not, honestly, I'm fine either way."
+    ],
+    "second_story": "open_window The Open Window",
+    "pivot_type": "switch_path",
+    "diagnosis": "The long detective story didn't engage them, and they couldn't name a specific reason.",
+    "guide_message": "Funny works. Here's a quick, light one: a clever, witty twist that takes about five minutes. I've switched from a long mystery to a short comic story, so it won't ask much of you.",
+    "passed": true,
+    "fails": [],
+    "trial": 3
+  }
+]
