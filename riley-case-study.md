@@ -33,11 +33,11 @@ Every release followed the same routine:
 
 I also read the error logs, not only the transcripts, to find failed API calls and broken flow steps. For monthly stakeholder updates I built Salesforce and Power BI dashboards on top support issues, case closure rates and bot performance.
 
-## One thing I would do differently
+## When my testers dropped out
 
-On one release, the testers I had recruited got too busy, and I ended up as the only tester. I delayed the deployment by a couple of weeks instead of shipping it half tested. The extra testing was worth it: it caught grammar errors, broken links, and cases that were not closing automatically or were being logged with the wrong case type.
+On one release, the testers I had recruited agreed to do UAT because their workloads were light, then got busy and could no longer do it, so I ended up as the only tester. I had been upfront about the timeline and the date I needed results back, but their availability changed.
 
-The lesson I took from it is to tell testers the deadline up front and ask them to say early if they can't make it, so a gap shows up in week one, not week two.
+I delayed the deployment by a couple of weeks instead of shipping it half tested. The extra testing was worth it: it caught grammar errors, broken links, and cases that were not closing automatically or were being logged with the wrong case type.
 
 ## Related work
 
