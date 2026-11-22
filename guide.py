@@ -112,11 +112,14 @@ class GuideSession:
 
 def main():
     tags = load_tags()
-    session = GuideSession(tags, load_prompt(config.PROMPTS_DIR / "guide_v2.txt"))
+    session = GuideSession(tags, load_prompt(config.PROMPTS_DIR / "guide_v3.txt"))
     llm.reset_totals()
     print("Story Guide. Tell me what you're in the mood for. (Type quit to leave.)\n")
     user_text = input("You: ").strip()
-    while user_text.lower() not in ("quit", "exit", ""):
+    while user_text.lower() not in ("quit", "exit"):
+        if not user_text:          # an accidental Enter should not end the chat
+            user_text = input("(Type a reply, or quit to leave.)\nYou: ").strip()
+            continue
         d = session.send(user_text)
         print(f"\nGuide: {d['message']}")
         if d["action"] == "recommend":

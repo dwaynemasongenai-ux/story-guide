@@ -16,7 +16,7 @@ It is a small, public-domain stand-in for a recommender I built at work (Conscio
 1. **Library.** 30 public-domain short stories from Wikisource: 8 horror and gothic, 5 mystery, 4 each of humor, adventure and literary, 3 science fiction and fantasy, 2 romance and drama. 10 short, 15 medium and 5 long; 6 with challenging language.
 2. **Tagging.** Claude (Haiku) reads the opening and closing of each story and tags genre, subgenre, mood, language difficulty and type of ending, and writes a spoiler-free blurb. Length comes from the word count. Output is validated JSON, with a retry if a tag is invalid.
 3. **Guide loop.** Claude (Sonnet) gets the tagged catalog and the conversation so far, and replies with JSON: ask a question, or recommend a story with a pivot type. Replies are validated (real story id, no repeats, at most three questions in a row) and retried if they fail.
-4. **Tests.** 15 scripted reader scenarios. Each starts from a fixed first story, has a simulated reader (a cheap model playing a hidden persona) drop it, lets the guide ask its questions, then checks the next recommendation against what a good guide should do: the right kind of pivot, the right change in genre, length, language, ending or mood, and the right number of questions.
+4. **Tests.** 16 scripted reader scenarios. Each starts from a fixed first story, has a simulated reader (a cheap model playing a hidden persona) drop it, lets the guide ask its questions, then checks the next recommendation against what a good guide should do: the right kind of pivot, the right change in genre, length, language, ending or mood, and the right number of questions.
 
 ## Example session
 
@@ -56,20 +56,32 @@ What happened: a vague drop got one clarifying question (ask), "no emotional jou
 
 ## Results
 
-Each prompt version was run 3 times over all 15 scenarios (45 scenario runs), because the guide's answers vary from run to run: the same prompt scored 12/13, 13/15 and 11/15 in single runs.
+Each prompt version was run 3 times over every scenario, because the guide's answers vary from run to run: the same prompt scored 12/13, 13/15 and 11/15 in single runs.
 
-| Prompt | Passed | Cost of the run |
+| Prompt | Original 15 scenarios (3 runs each) | Cost of the run |
 |---|---|---|
 | v1: original | 36 / 45 (80%) | $1.16 |
 | v2: adds a rule for telling "adjust within the genre" from "switch genre" | 40 / 45 (89%) | $0.98 |
+| v3: v2 plus a rule to stop asking questions after two vague answers | 38 / 45 (84%) | $1.28 (16 scenarios, 48 runs) |
 
-What changed: in v1 the guide kept readers inside a genre when the real complaint was about what the genre offers ("the jokes feel shallow, I want depth"). v2 adds one rule separating a complaint about a dimension of the story (too long, too dark, too slow) from a complaint about the genre's core pleasure. `humor_wants_depth` went from 0/3 to 3/3, and three other scenarios that were flaky became 3/3.
+**v1 to v2.** In v1 the guide kept readers inside a genre when the real complaint was about what the genre offers ("the jokes feel shallow, I want depth"). v2 separates a complaint about one dimension of a story (too long, too dark, too slow) from a complaint about the genre's core pleasure. `humor_wants_depth` went from 0/3 to 3/3, and three other flaky scenarios became 3/3.
 
-What did not improve, or got worse:
-- `literary_too_slow` went from 1/3 to 0/3. The guide treats "too slow" as a complaint about one dimension and picks a faster literary story. That is a defensible answer, so this may be a scenario whose expectation is too strict, not a bug.
-- `scifi_too_farfetched` went from 2/3 to 1/3. The guide moves readers to humor, which the scenario does not list as an acceptable destination.
+### A weakness found in real use
 
-I left both scenarios unchanged so the numbers are not tuned to the guide. Fifteen scenarios, three runs each, is a small test: the gain is clearest on the one scenario the prompt change was aimed at.
+While trying the guide myself, I gave vague answers ("meh", "it was forgettable", "nothing really happened") and the guide asked three questions in a row, drifting toward options I had not asked about. I turned that into a test, `vague_all_the_way`: a simulated reader who gives abstract answers that point to no fix. The guide passes only if it asks at most two questions.
+
+| Prompt | `vague_all_the_way` (10 runs each) |
+|---|---|
+| v2 | 4 / 10 |
+| v3 | 9 / 10 |
+
+My first version of this test passed 3 out of 3 with v2, so it proved nothing: the simulated reader said "I can't put my finger on it," which made the guide stop on its own. I rewrote the reader to answer the way I really had and ran 10 trials per prompt, which is what exposed the problem. With only 10 runs each, I treat the improvement as likely real, not certain.
+
+**Side effects of v3.** On the original 15 scenarios v3 scored 38/45 against v2's 40/45. The difference comes from `scifi_too_farfetched` (1/3 to 0/3) and `switch_path_and_keep_it_short` (3/3 to 2/3). That is inside the run-to-run noise seen above, but it may be a small real cost. `vague_drop_needs_a_question`, which requires the guide to ask, stayed at 3/3.
+
+**Still failing.** `literary_too_slow` (0/3 on v2 and v3): the guide treats "too slow" as one dimension of the story and picks a faster literary story, which is defensible, so the scenario's expectation may be too strict. `scifi_too_farfetched` also fails because the guide moves readers to genres the scenario does not list as acceptable. I left both scenarios unchanged so the numbers are not tuned to the guide.
+
+Fifteen-plus scenarios at three runs each is a small test, so these results show a direction, not proof.
 
 ## Cost
 
@@ -78,8 +90,11 @@ Tagging all 30 stories cost about 2 cents. A scripted conversation (guide plus s
 ## Known limitations
 
 - Tags are written by Claude and have not been hand-verified. Some are debatable (for example, *The Gift of the Magi* gets a "tragic" mood tag).
-- The library has no stories tagged "easy" language, and only one thin pocket of romance. Some pivots have few good destinations.
+- The library has no stories tagged "easy" language, and only a thin pocket of romance. Some pivots have few good destinations.
 - The reader in the tests is simulated, so the tests check consistency with a persona, not how real readers react.
+- Even with v3, the guide occasionally asks one question too many with a very vague reader (1 run in 10 asked four).
+- Once in real use the guide replied "Sorry, I lost my place" (its fallback after three rejected replies). It did not happen again; rejected replies are now logged to `logs/guide_problems.log`, but I have not found the cause.
+- Each turn sends the whole 30-story catalog, so a short chat costs about 8 cents. Trimming the catalog sent per turn would cut that.
 
 ## Setup (Windows)
 
@@ -88,7 +103,7 @@ Tagging all 30 stories cost about 2 cents. A scripted conversation (guide plus s
    `setx ANTHROPIC_API_KEY "paste-your-key-here"`
    Then close Command Prompt and open a new one.
 3. In this folder, check the setup: `python check_setup.py`
-4. Run the scripts in order: `python fetch_stories.py` (downloads the stories), `python tag_stories.py` (tags them), then `python guide.py` to chat. To run the tests: `python run_tests.py --repeats 3`, or `python run_tests.py --prompt prompts/guide_v2.txt --repeats 3` to compare prompt versions.
+4. Run the scripts in order: `python fetch_stories.py` (downloads the stories), `python tag_stories.py` (tags them), then `python guide.py` to chat (it uses the v3 prompt). To run the tests: `python run_tests.py --repeats 3`, or `python run_tests.py --prompt prompts/guide_v2.txt --repeats 3` to compare prompt versions.
 
 ## Notes
 
