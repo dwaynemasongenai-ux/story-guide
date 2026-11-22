@@ -8,6 +8,10 @@ This is a written case study because the real material is proprietary. There are
 
 Most of the people who reached Riley were learners, healthcare professionals with questions such as how to finish a course or print a continuing-education certificate. They wanted a quick path to an answer or to a person.
 
+## Where Riley's name and voice came from
+
+Our internal market research team narrowed a short list of names and settled the bot's tone. Riley was chosen for the pairing "Reliable Riley," and because the name echoes Relias. That voice is what I was responsible for keeping consistent as the bot grew.
+
 ## Problem 1: users kept typing the word agent
 
 When I read real conversation transcripts, I noticed users repeatedly typing the word agent. They were not working through the bot. They were trying to get around it.
