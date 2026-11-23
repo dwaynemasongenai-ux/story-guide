@@ -109,4 +109,4 @@ Tagging all 30 stories cost about 2 cents. A scripted conversation (guide plus s
 
 ## Notes
 
-Built with AI assistance (Claude). Stories are public domain, via Wikisource.
+Stories are public domain, via Wikisource.
